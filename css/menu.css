@@ -1,0 +1,41 @@
+#menuOpciones{
+	display: none;
+}
+
+header label{
+	float: right;
+	font-size: 28px;
+	margin: 6px 0;
+	
+}
+
+.menu{
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width: 50%;
+	height: 100vh;
+	background: #04051F;
+	transition: all 0.4s;
+	transform: translateX(-100%);
+}
+
+.menu a{
+	display: block;
+	color: #fff;
+	height: 30px;
+	text-decoration: none;
+	padding: 50px
+	
+}
+
+.menu a:hover{
+	background: #333333;
+}
+
+#menuOpciones:checked ~ .menu{
+	transform: translateX(0%);
+}
+	
+	
+	
